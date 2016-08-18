@@ -1,45 +1,29 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.master')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    @section('title')
+        Welcome!
+    @endsection
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+    @section('content')
+        <div class="row">
+            <div class="col-6">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="email">Your E-mail</label>
+                        <input class="form-control" type="text" name="email" id="email">
+                    </div>
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+                    <div class="form-group">
+                        <label for="email">Your E-mail</label>
+                        <input class="form-control" type="text" name="email" id="email">
+                    </div>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+                    <div class="form-group">
+                        <label for="email">Your E-mail</label>
+                        <input class="form-control" type="text" name="email" id="email">
+                    </div>
+                    
+                </form>
             </div>
         </div>
-    </body>
-</html>
+    @endsection
